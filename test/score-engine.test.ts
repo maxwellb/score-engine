@@ -1,13 +1,13 @@
 import ScoreEngine, {
   pipeAlgorithms,
-  ScoreAlgorithm,
-  Scored,
-  ScoreMap,
+  type ScoreAlgorithm,
+  type Scored,
+  type ScoreMap,
   withFx,
   withPercentages,
   withStrictBound,
   withWeight,
-} from '../../../src/lib/score-engine';
+} from '../src';
 
 type Item = { id: string };
 const emptyContext = {};

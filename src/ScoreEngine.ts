@@ -12,7 +12,7 @@ const applyScoreMap = <K extends string, T extends { [key in K]: string }>(
     const getScores: Transformer<ScoreMap, [number]> = propOr([0], getId(item));
     const scores = getScores(scoreMap);
 
-    return assoc(SCORE_KEY, scores, item);
+    return assoc(SCORE_KEY, scores, item) as Scored<T>;
   };
   return map(createScoredItem, items);
 };
@@ -24,7 +24,7 @@ const applyScoreMap = <K extends string, T extends { [key in K]: string }>(
  * @param options ScoreOptions<K>
  * @return ScoreComputation<T, C>
  */
-const scoreEngine = <K extends string, T extends { [key in K]: string }, C>(
+const scoreEngine = <K extends string, T extends { [key in K]: string }, C extends {}>(
   algorithm: ScoreAlgorithm<T, C>,
   options: ScoreOptions<K, T>,
 ): ScoreComputation<T, C> => {

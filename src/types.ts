@@ -1,10 +1,8 @@
-import { Dictionary } from 'ramda';
-
 import { SCORE_KEY } from './constants';
 
 export type Transformer<T, U = T> = (_: T) => U; // represents a basic pure transformation (a -> b)
 
-export type ScoreMap = Dictionary<number[]>;
+export type ScoreMap = Record<string, number[]>;
 
 export type Scored<T> = T & {
   [SCORE_KEY]: number[],

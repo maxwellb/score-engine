@@ -4,7 +4,7 @@ import { ScoreAlgorithm, ScoreMap, Transformer } from '../types';
 const mergeConcat = mergeWith(concat);
 
 const getNbMaxScores = (scoreMap: ScoreMap): number =>
-  Object.values(scoreMap).reduce((nbMaxScore, scores) => (
+  (Object.values(scoreMap) as number[][]).reduce((nbMaxScore, scores) => (
     nbMaxScore >= scores.length ? nbMaxScore : scores.length
   ), 0);
 
