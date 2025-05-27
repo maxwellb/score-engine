@@ -1,24 +1,23 @@
 {
-  
   "compilerOptions": {
     "allowJs": false,
     "experimentalDecorators": true,
-    "removeComments": false,
-    "preserveConstEnums": true,
+    "importHelpers": true,
+    "jsx": "react",
+    "lib": ["es2017", "dom"],
+    "module": "commonjs",
+    "noEmitHelpers": true,
     "noImplicitAny": true,
     "noImplicitReturns": true,
-    "strictNullChecks": true,
-    "noUnusedLocals": true,
     "noImplicitThis": true,
+    "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "sourceMap": true,
-    "importHelpers": true,
-    "noEmitHelpers": true,
-    "module": "commonjs",
-    "target": "es2016",
-    "jsx": "react",
+    "preserveConstEnums": true,
+    "removeComments": false,
     "resolveJsonModule": true,
     "skipLibCheck": true,
-    "lib": ["es2017", "dom"]
+    "sourceMap": true,
+    "strictNullChecks": true,
+    "target": "es2016"
   }
 }
