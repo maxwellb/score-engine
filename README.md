@@ -1,4 +1,4 @@
-# Score Engine 0.3 :signal_strength:
+# Score Engine 0.3.3 :signal_strength:
 A practical and composable score computation engine for TypeScript
 
 ## Table of Contents

@@ -97,7 +97,7 @@ describe('score-engine', () => {
       ]);
     });
 
-    test('hoist given items and context', () => {});
+    test('hoist given items and context', () => { });
   });
 
   describe('pipeAlgorithms', () => {

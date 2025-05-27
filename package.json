@@ -1,7 +1,11 @@
 {
   "name": "score-engine",
+  "version": "0.3.3",
   "module": "src/index.ts",
   "type": "module",
+  "scripts": {
+    "test": "jest"
+  },
   "devDependencies": {
     "@types/jest": "^29.0.0",
     "@types/ramda": "^0.30.2",
