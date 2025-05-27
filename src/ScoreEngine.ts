@@ -1,6 +1,6 @@
 import { map, propOr, assoc } from 'ramda';
 import { SCORE_KEY } from './constants';
-import { ScoreAlgorithm, ScoreComputation, Scored, ScoreMap, ScoreOptions, Transformer } from './types';
+import type { ScoreAlgorithm, ScoreComputation, Scored, ScoreMap, ScoreOptions, Transformer } from './types';
 
 const applyScoreMap = <K extends string, T extends { [key in K]: string }>(
   scoreMap: ScoreMap,

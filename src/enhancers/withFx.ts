@@ -1,5 +1,5 @@
 import { pipe, tap } from 'ramda';
-import { ScoreAlgorithm, ScoreMap } from '../types';
+import type { ScoreAlgorithm, ScoreMap } from '../types';
 
 /**
  * Apply a side effect function on the ScoreMap result

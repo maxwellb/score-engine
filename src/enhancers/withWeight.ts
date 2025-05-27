@@ -1,5 +1,5 @@
 import { compose, map, multiply } from 'ramda';
-import { ScoreAlgorithm, ScoreMap, Transformer } from '../types';
+import type { ScoreAlgorithm, ScoreMap, Transformer } from '../types';
 
 // const sumAbsoluteValues = compose(sum, map(Math.abs), map(sum), values);
 

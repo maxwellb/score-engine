@@ -1,5 +1,5 @@
 import { compose, map, pipe, reduce, values, sum } from 'ramda';
-import { ScoreAlgorithm, ScoreMap, Transformer } from '../types';
+import type { ScoreAlgorithm, ScoreMap, Transformer } from '../types';
 import { divideBy } from '../utils';
 
 const getHighestAbsoluteValue = pipe(

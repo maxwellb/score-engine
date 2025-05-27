@@ -1,5 +1,5 @@
 import { compose, map, mergeWith, reduce, concat, repeat } from 'ramda';
-import { ScoreAlgorithm, ScoreMap, Transformer } from '../types';
+import type { ScoreAlgorithm, ScoreMap, Transformer } from '../types';
 
 const mergeConcat = mergeWith(concat);
 

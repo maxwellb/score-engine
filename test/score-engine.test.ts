@@ -195,16 +195,16 @@ describe('score-engine', () => {
     test('should apply bounding between -1 and 0', () => {
       const enhancedAlgorithm = withPercentages(incrementAlgorithm);
       const scoremap = enhancedAlgorithm(items, emptyContext);
-      expect(scoremap.a[0]).toBeCloseTo(0.16666);
-      expect(scoremap.b[0]).toBeCloseTo(0.33333);
-      expect(scoremap.c[0]).toBe(0.5);
+      expect(scoremap['a'][0]).toBeCloseTo(0.16666);
+      expect(scoremap['b'][0]).toBeCloseTo(0.33333);
+      expect(scoremap['c'][0]).toBe(0.5);
     });
     test('with context', () => {
       const enhancedAlgorithm = withPercentages(contextAlgorithm);
       const scoremap = enhancedAlgorithm(items, { score: 42 });
-      expect(scoremap.a[0]).toBeCloseTo(0.33333);
-      expect(scoremap.b[0]).toBeCloseTo(0.33333);
-      expect(scoremap.c[0]).toBeCloseTo(0.33333);
+      expect(scoremap['a'][0]).toBeCloseTo(0.33333);
+      expect(scoremap['b'][0]).toBeCloseTo(0.33333);
+      expect(scoremap['c'][0]).toBeCloseTo(0.33333);
     });
   });
 
@@ -212,9 +212,9 @@ describe('score-engine', () => {
     test('should apply bounding between -1 and 0', () => {
       const enhancedAlgorithm = withStrictBound(incrementAlgorithm);
       const scoremap = enhancedAlgorithm(items, emptyContext);
-      expect(scoremap.a[0]).toBeCloseTo(0.33333);
-      expect(scoremap.b[0]).toBeCloseTo(0.66666);
-      expect(scoremap.c[0]).toBe(1);
+      expect(scoremap['a'][0]).toBeCloseTo(0.33333);
+      expect(scoremap['b'][0]).toBeCloseTo(0.66666);
+      expect(scoremap['c'][0]).toBe(1);
     });
     test('with context', () => {
       const enhancedAlgorithm = withStrictBound(contextAlgorithm);
